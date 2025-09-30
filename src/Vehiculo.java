@@ -1,4 +1,3 @@
-
 // Clase abstracta que representa un vehículo genérico
 public abstract class Vehiculo {
     protected String marca;

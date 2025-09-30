@@ -1,5 +1,5 @@
-// Clase que representa un Automóvil, hereda de Vehiculo e implementa Combustible
-public class Automovil extends Vehiculo implements Combustible {
+// Clase que representa un Automóvil, hereda de Vehiculo e implementa Combustible y Mantenimiento
+public class Automovil extends Vehiculo implements Combustible, Mantenimiento {
     private double nivelCombustible;
 
     public Automovil(String marca, String modelo, int anio, double nivelCombustible) {
@@ -31,6 +31,12 @@ public class Automovil extends Vehiculo implements Combustible {
     @Override
     public double obtenerNivelCombustible() {
         return nivelCombustible;
+    }
+
+    @Override
+    public void realizarMantenimiento() {
+        System.out.println("Revisando motor...");
+        System.out.println("Cambiando bielas y pistones...");
     }
 }
 
